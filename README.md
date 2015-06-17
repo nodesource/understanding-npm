@@ -69,7 +69,7 @@ Some other packages that were born from this project include:
 * [`rapid-stream`](http://github.com/nodesource/rapid-stream)
 * [`lookat-camera`](http://github.com/stackgl/lookat-camera)
 * [`glsl-scale-log`](http://github.com/stackgl/glsl-scale-log)
-* [`glsl-scale-log`](http://github.com/stackgl/glsl-scale-linear)
+* [`glsl-scale-linear`](http://github.com/stackgl/glsl-scale-linear)
 * [`md5ify`](http://github.com/hughsk/md5ify)
 
 ## Authors and Contributors
