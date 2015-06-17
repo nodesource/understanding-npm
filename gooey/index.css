@@ -1,0 +1,69 @@
+.gooey {
+  font-family: 'Fantasque Sans Mono', 'Ubuntu Mono', monospace;
+  color: #DEE7FF;
+  background: #4A4F5E;
+  background: rgba(74, 79, 94, 0.95);
+  position: absolute;
+  overflow: hidden;
+  top: 0.25rem; left: 0.25rem; width: 300px;
+  height: 2rem;
+  z-index: 9999;
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+
+.gooey:hover {
+  opacity: 1;
+}
+
+.gooey.gooey-visible {
+  opacity: 1;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  max-height: calc(100vh - 0.5rem);
+}
+
+.gooey-entry {
+  position: relative;
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.gooey-h1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
+
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.gooey-top-toggle {
+  cursor: pointer;
+  height: 2rem;
+  background: #34363B;
+  position: relative;
+  transition: background 0.25s, color 0.25s;
+}
+
+.gooey-top-toggle:before {
+  content: 'Toggle Controls';
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+}
+
+.gooey-top-toggle:hover {
+  background: #66C4FF;
+  color: #34363B;
+}

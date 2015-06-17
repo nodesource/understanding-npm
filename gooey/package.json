@@ -1,0 +1,28 @@
+{
+  "name": "gooey",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "budo demo.js:bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "dependencies": {
+    "brfs": "^1.4.0",
+    "clamp": "^1.0.1",
+    "defaultcss": "^1.1.1",
+    "escape-html": "^1.0.1",
+    "events": "^1.0.2",
+    "frame-debounce": "^1.0.1",
+    "inherits": "^2.0.1",
+    "mouse-position": "^1.0.0",
+    "onecolor": "^2.5.0",
+    "zfill": "0.0.2"
+  },
+  "devDependencies": {
+    "budo": "^2.1.2",
+    "watchify": "^3.1.0"
+  }
+}

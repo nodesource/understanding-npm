@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>particle-editor</title>
+    <link rel="stylesheet" href="index.css">
+    <style media="screen">
+      body, html {
+        background: #000;
+      }
+
+      #viewer {
+        position: absolute;
+        left: 50vw; top: 0;
+        bottom: 0; right: 0;
+      }
+
+      #editor {
+        position: absolute;
+        top: 0; left: 0;
+        width: 50vw; height: 100vh;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      .CodeMirror {
+        background: #000;
+        color: #fff;
+      }
+
+      .CodeMirror div.CodeMirror-cursor {
+        border-left-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="editor"></div>
+    <div id="viewer"></div>
+    <script charset="utf-8" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.gooey-slider {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.gooey-slider-wrap {
+  height: 1rem;
+  background: #34363B;
+  position: relative;
+  margin-top: 0.35rem;
+  cursor: ew-resize;
+}
+
+.gooey-slider-wrap:hover .gooey-slider-inner {
+  opacity: 1;
+}
+
+.gooey-slider-inner {
+  position: absolute;
+  opacity: 0.9;
+  top: 0; left: 0; bottom: 0;
+  width: 50%;
+  background: #DEE7FF;
+}

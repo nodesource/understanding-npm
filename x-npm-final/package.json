@@ -1,0 +1,32 @@
+{
+  "name": "@x/npm-final",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "budo index.js:bundle.js --live | garnish"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "dependencies": {
+    "canvas-fit": "^1.3.0",
+    "canvas-orbit-camera": "^1.0.1",
+    "eye-vector": "0.0.0",
+    "gl-context": "^0.1.1",
+    "gl-geometry": "^1.0.3",
+    "gl-mat4": "^1.1.2",
+    "gl-matrix": "^2.1.0",
+    "gl-particles": "^1.0.0",
+    "gl-shader": "^4.0.1",
+    "glsl-diffuse-oren-nayar": "^1.0.2",
+    "glsl-fog": "0.0.1",
+    "glsl-noise": "0.0.0",
+    "glslify": "^2.1.1",
+    "icosphere": "^1.0.0"
+  },
+  "devDependencies": {
+    "garnish": "^2.1.3"
+  }
+}

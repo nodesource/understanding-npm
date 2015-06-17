@@ -1,0 +1,10 @@
+{
+  "name": "@unpm/system",
+  "version": "1.0.0",
+  "private": true,
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}

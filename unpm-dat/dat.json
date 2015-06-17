@@ -1,0 +1,8 @@
+{
+  "name": "unpm-dat",
+  "description": "Local dat mirror of npm metadata for analysis/aggregation",
+  "publisher": "NodeSource",
+  "hooks": {
+    "listen": "dat-npm"
+  }
+}

@@ -1,0 +1,10 @@
+.gooey-toggle {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  line-height: 1em;
+}
+
+.gooey-toggle input {
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@unpm/preloader",
+  "main": "index.js",
+  "version": "1.0.0",
+  "scripts": {
+    "bundle": "babel -m ignore -b strict index.js | uglifyjs --screw-ie8 -cm > bundle.js"
+  },
+  "devDependencies": {
+    "babel": "^5.5.8",
+    "budo": "^4.0.0",
+    "uglify-js": "^2.4.23"
+  }
+}

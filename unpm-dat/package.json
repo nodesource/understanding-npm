@@ -1,0 +1,36 @@
+{
+  "name": "@unpm/dat",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "dat listen",
+    "rebuild": "node .",
+    "harvest": "node downloads && node stars && npm run rebuild && node stats"
+  },
+  "dependencies": {
+    "JSONStream": "^0.10.0",
+    "after": "^0.8.1",
+    "cheerio": "^0.19.0",
+    "concat-stream": "^1.4.8",
+    "dat-npm": "^4.0.6",
+    "ghauth": "^2.0.1",
+    "head-stream": "0.0.4",
+    "hosted-git-info": "^2.1.2",
+    "index-list": "^1.0.0",
+    "level": "^0.18.0",
+    "level-sublevel": "^6.4.6",
+    "mkdirp": "^0.5.0",
+    "normalize-package-data": "^2.0.0",
+    "npm-download-counts": "^0.1.1",
+    "npm-stats": "^1.1.0",
+    "parallel-transform": "^0.2.2",
+    "rapid-stream": "^1.0.0",
+    "request": "^2.55.0",
+    "sort-stream2": "^1.0.0",
+    "spdx-correct": "^1.0.0-prerelease-2",
+    "stream-slice": "^0.1.2",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "dat": "^6.9.7"
+  }
+}

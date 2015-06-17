@@ -1,0 +1,50 @@
+{
+  "name": "understanding-npm",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm ex @unpm/server npm start",
+    "prestart": "npm run relink",
+    "relink": "linklocal",
+    "preinstall": "mkdir -p ~/.npm/@unpm",
+    "postinstall": "linklocal && linklocal --list | bulk -c 'npm install --cache-min Infinity --production'",
+    "clean": "rm-modules"
+  },
+  "engines": {
+    "npm": "2.x"
+  },
+  "cacheDirectories": [],
+  "dependencies": {
+    "@nsight/header": "file:nsight-header",
+    "@unpm/background": "file:unpm-background",
+    "@unpm/camera": "file:unpm-camera",
+    "@unpm/dat": "file:unpm-dat",
+    "@unpm/downloaders": "file:unpm-downloaders",
+    "@unpm/fetch-data": "file:unpm-fetch-data",
+    "@unpm/frontend": "file:unpm-frontend",
+    "@unpm/labels": "file:unpm-labels",
+    "@unpm/packages": "file:unpm-packages",
+    "@unpm/preloader": "file:unpm-preloader",
+    "@unpm/registry": "file:unpm-registry",
+    "@unpm/screen-coords": "file:unpm-screen-coords",
+    "@unpm/server": "file:unpm-server",
+    "@unpm/storyboard": "file:unpm-storyboard",
+    "@unpm/system": "file:unpm-system",
+    "babel": "^5.0.12",
+    "babelify": "^5.0.5",
+    "brfs": "^1.4.0",
+    "bulk": "^2.0.0-alpha-0",
+    "envify": "^3.4.0",
+    "glslify": "^2.1.2",
+    "glslify-hex": "^2.0.1",
+    "gooey": "file:gooey",
+    "linklocal": "^2.5.0",
+    "uglify-js": "^2.4.20",
+    "watchify": "^3.1.1"
+  },
+  "devDependencies": {
+    "budo": "~3.1.1",
+    "garnish": "^2.1.3",
+    "rm-modules": "^1.0.2"
+  }
+}

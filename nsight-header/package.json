@@ -1,0 +1,20 @@
+{
+  "name": "@nsight/header",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "budo demo.js"
+  },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "dependencies": {
+    "brfs": "^1.4.0",
+    "defaultcss": "^1.1.1",
+    "domify": "^1.3.3"
+  },
+  "devDependencies": {
+    "budo": "^4.0.0"
+  }
+}

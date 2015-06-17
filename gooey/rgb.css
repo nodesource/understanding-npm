@@ -1,0 +1,15 @@
+.gooey-rgb-r .gooey-slider-inner { background: #FF6F5C; }
+.gooey-rgb-g .gooey-slider-inner { background: #61FF90; }
+.gooey-rgb-b .gooey-slider-inner { background: #66C4FF; }
+
+.gooey-rgb .gooey-slider-wrap {
+  margin-left: 4.7rem;
+}
+
+.gooey-rgb .gooey-rgb-display {
+  height: 3.7rem;
+  width: 3.7rem;
+  float: left;
+  border-radius: 3px;
+  background: #f00;
+}

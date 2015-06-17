@@ -1,0 +1,34 @@
+{
+  "name": "@unpm/background",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "budo demo.js"
+  },
+  "devDependencies": {
+    "canvas-orbit-camera": "^1.0.2",
+    "eye-vector": "0.0.0",
+    "gl-context": "^0.1.1",
+    "gl-matrix": "^2.1.0",
+    "gooey": "0.0.3"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "glslify"
+    ]
+  },
+  "dependencies": {
+    "a-big-triangle": "^1.0.0",
+    "canvas-fit": "^1.4.0",
+    "gl-geometry": "^1.0.3",
+    "gl-mat4": "^1.1.2",
+    "gl-shader": "^4.0.1",
+    "gl-wireframe": "^1.0.1",
+    "glsl-fog": "0.0.1",
+    "glsl-noise": "0.0.0",
+    "glsl-random": "0.0.5",
+    "glsl-square-frame": "^1.0.1",
+    "glslify": "^2.1.2",
+    "grid-mesh": "^0.1.0"
+  }
+}

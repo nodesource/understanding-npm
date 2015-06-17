@@ -1,0 +1,11 @@
+.gooey-hsv .gooey-slider-wrap {
+  margin-left: 4.7rem;
+}
+
+.gooey-hsv .gooey-hsv-display {
+  height: 3.7rem;
+  width: 3.7rem;
+  float: left;
+  border-radius: 3px;
+  background: #f00;
+}

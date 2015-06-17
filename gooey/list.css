@@ -1,0 +1,14 @@
+.gooey-list select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.35rem 0.45rem;
+  background: #34363B;
+  color: #CCD4EB;
+  outline: 0;
+  font-family: 'Fantasque Sans Mono';
+}

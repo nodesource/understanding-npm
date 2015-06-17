@@ -1,0 +1,7 @@
+{
+  "name": "@unpm/screen-coords",
+  "version": "1.0.0",
+  "dependencies": {
+    "from-3d-to-2d": "0.0.1"
+  }
+}

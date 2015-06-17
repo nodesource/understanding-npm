@@ -1,0 +1,16 @@
+{
+  "name": "@unpm/labels",
+  "version": "1.0.0",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "dependencies": {
+    "dom-css": "^1.1.1",
+    "es6-set": "^0.1.1",
+    "es6-symbol": "^2.0.1",
+    "escape-html": "^1.0.1",
+    "remove-element": "0.0.0"
+  }
+}

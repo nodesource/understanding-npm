@@ -1,0 +1,32 @@
+{
+  "name": "@x/npm-metaballs",
+  "private": true,
+  "scripts": {
+    "start": "budo index.js | garnish"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "dependencies": {
+    "a-big-triangle": "^1.0.0",
+    "canvas-fit": "^1.2.0",
+    "gl-buffer": "^2.1.1",
+    "gl-context": "^0.1.1",
+    "gl-fbo": "^2.0.3",
+    "gl-shader": "^4.0.0",
+    "gl-texture2d": "^2.0.8",
+    "gl-texture2d-display": "^1.0.0",
+    "gl-vao": "^1.2.0",
+    "glsl-fxaa": "^2.1.0",
+    "glsl-noise": "0.0.0",
+    "glsl-square-frame": "^1.0.1",
+    "glslify": "^2.0.1",
+    "ndarray": "^1.0.16"
+  },
+  "devDependencies": {
+    "budo": "^4.0.0",
+    "garnish": "^2.1.3"
+  }
+}

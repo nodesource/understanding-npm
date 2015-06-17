@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Understanding npm</title>
+    <link href="//fonts.googleapis.com/css?family=Source+Sans Pro:200,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="index.css">
+
+    <meta property="og:title" content="N|Sight: Understanding npm"/>
+    <meta property="og:site_name" content="NodeSource"/>
+    <meta property="og:description" content="npm is the default package manager for Node.js. It was initially created to help developers manage files, metadata and dependencies for their JavaScript applications. This visualization is intended to help you understand the role and scope of npm." />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://unpm.nodesource.com/share.jpg" />
+
+    <meta name="twitter:site" content="@nodesource">
+    <meta name="twitter:creator" content="@nodesource">
+    <meta name="twitter:title" content="N|Sight: Understanding npm">
+    <meta name="twitter:description" content="npm is the default package manager for Node.js. It was initially created to help developers manage files, metadata and dependencies for their JavaScript applications. This visualization is intended to help you understand the role and scope of npm." />
+  </head>
+  <body>
+    <nsight-header></nsight-header>
+
+    <div class="content">
+      <section id="unpm-content-intro">
+        <h1>Understanding npm</h1>
+
+        <p>
+          npm is the default package manager for Node.js. It was initially created to
+          help developers manage dependencies for their JavaScript
+          applications. Born as an open source project in 2009, npm features a package
+          registry and client that enables developers to consume and distribute open source code.
+        </p>
+
+        <p>
+          Since its creation, the role of npm has expanded to fulfill the broader
+          needs of the JavaScript and Node.js developer community to include
+          management of front-end web applications, mobile applications and other
+          JavaScript development tools and frameworks. Today, the npm project and
+          registry is hosted and managed as a free service by npm, Inc, supporting
+          more than a billion downloads a month.
+        </p>
+
+        <p>
+          This visualization is intended to help you understand the role and scope of
+          npm.
+        </p>
+
+      </section>
+      <section id="unpm-content-intro-registry"><div class="content-body">
+        <h1>npm Registry</h1>
+        <p>
+          This is the npm registry. Every time you download a package using <code>npm install</code>,
+          you're downloading it from here – it's essentially a huge database containing each package's
+          files and associated metadata.
+        </p>
+      </div></section>
+      <section id="unpm-content-intro-package-solo"><div class="content-body">
+        <h1>Packages</h1>
+        <p>
+          This is a package. Each package contains a little bit of JavaScript
+          serving a particular purpose, and has useful metadata associated with
+          it as well: its license type, a short description, GitHub repository,
+          and so on.
+        </p>
+      </div></section>
+      <section id="unpm-content-intro-package"><div class="content-body">
+        <h1>Packages</h1>
+        <p>
+          npm has a lot of packages. Right now, there's <strong data-stats="total">142,000</strong>
+          of them that have been published by the community.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Packages Published</h1>
+        <strong data-stats="total">142,000</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-intro-package-grow"><div class="content-body">
+        <h1>Registry Growth</h1>
+        <p>
+          npm's growing significantly every day. Right now, there are about
+          <strong data-stats="publish-rate">5,925</strong> new packages published per week.
+          Of those, here's <strong>32,768</strong> of npm's most downloaded packages.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Packages Per Week</h1>
+        <strong data-stats="publish-rate">5,925</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-downloads-01"><div class="content-body">
+        <h1>Downloads</h1>
+        <p>
+          Lots of packages means lots of downloads, too. In the last week alone, there's
+          been a total of <strong data-stats="download-week">353,296,858</strong> package
+          downloads from the registry.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Downloads Per Week</h1>
+        <strong data-stats="download-week">353,296,858</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-downloads-02"><div class="content-body">
+        <h1>Downloads</h1>
+        <p>
+          To give you an idea of what that's like, here's an illustration of each package
+          downloaded at the current rate: each beam fired is roughly equivalent to
+          <strong>5 downloads</strong>.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Downloads Per Week</h1>
+        <strong data-stats="download-week">353,296,858</strong>
+      </aside>
+      </section>
+
+      <section id="unpm-content-quality-01"><div class="content-body">
+        <h1>Package Quality</h1>
+        <p>
+          npm's greatest strength, its size, is also its greatest weakness. There's
+          too much code out there to conceiveably digest on your own.
+          However, there are a few quick checks you can make to narrow down the
+          list of potential packages to use.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Remaining Packages</h1>
+        <strong data-string="quality-1-percent">100%</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-quality-02"><div class="content-body">
+        <h1>Package Quality</h1>
+        <p>
+          Let's separate the packages that are missing a readme.
+          A readme is the central point of documentation for any package published to
+          npm, and is more or less essential if you’d like to learn how it works.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Remaining Packages</h1>
+        <strong data-string="quality-2-percent">100%</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-quality-03"><div class="content-body">
+        <h1>Package Quality</h1>
+        <p>
+          And any packages that are missing a license field from their package.json.
+          Unlicensed packages default to being copyrighted by the author, and as such
+          are unusable in many commercial environments without permission.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Remaining Packages</h1>
+        <strong data-string="quality-3-percent">100%</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-quality-04"><div class="content-body">
+        <h1>Package Quality</h1>
+        <p>
+          It's important that packages link to a git repository that holds their original
+          source. Without that, it becomes more difficult to review the code and
+          submit improvements.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Remaining Packages</h1>
+        <strong data-string="quality-4-percent">100%</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-quality-05"><div class="content-body">
+        <h1>Package Quality</h1>
+        <p>
+          Finally, most packages need some kind of test script to survive changes submitted
+          by the community. This won't always be the case, but can be a useful metric for
+          a number of different kinds of packages.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Remaining Packages</h1>
+        <strong data-string="quality-5-percent">100%</strong>
+      </aside>
+      </section>
+      <section id="unpm-content-quality-06"><div class="content-body">
+        <h1>Package Quality</h1>
+        <p>
+          After removing all of these, we're left with <strong data-stats="quality-5">100%</strong>
+          of our original <strong>32,768</strong>
+          packages that meet our criteria for "good quality modules", just a small fraction of our original sample.
+        </p>
+      </div>
+      <aside class="content-stat">
+        <h1>Remaining Packages</h1>
+        <strong data-string="quality-5-percent">100%</strong>
+      </aside>
+      </section>
+
+      <section id="unpm-content-plots-00"><div class="content-body">
+        <h1>Scatterplots</h1>
+        <p>
+          There's a lot more insight yet to be gained from the registry, though.
+          Lets take a look at the data in a more traditional format: the
+          scatterplot.
+        </p>
+      </div></section>
+      <section id="unpm-content-plots-02"><div class="content-body">
+        <h1>Downloads and Activity</h1>
+        <p>
+          If we look at each package's weekly download count based on their last
+          publish date, we can see that recently updated packages appear to be
+          much more popular overall. It's also worth noting that the vast
+          majority of packages are dwarfed in their usage by a select few.
+        </p>
+      </div></section>
+      <section id="unpm-content-plots-03"><div class="content-body">
+        <h1>Stars and Activity</h1>
+        <p>
+          We can see a similar pattern by plotting out a project's GitHub stars
+          instead of downloads, although there is a wider margin between the
+          majority and the most popular packages.
+        </p>
+      </div></section>
+      <section id="unpm-content-plots-04"><div class="content-body">
+        <h1>Invisible Utilities</h1>
+        <p>
+          If we compare downloads and stars together, we can see that there's
+          actually very little correlation between usage (downloads) and
+          visibility (stars). This seems to imply that the really useful
+          packages are "invisible" utilities.
+
+          For example: <strong data-string="ignored-name">core-util-is</strong> is downloaded
+          <strong data-stats="ignored-downloads">1,652,405</strong> times a week, but only has
+          <strong data-stats="ignored-stars">39</strong> stars on GitHub. Conversely,
+          <strong data-string="inflated-name">hover.css</strong> has
+          <strong data-stats="inflated-stars">9,608</strong> stars but only
+          <strong data-stats="inflated-downloads">30</strong> downloads per week.
+        </p>
+      </div></section>
+
+      <section id="unpm-content-licenses-01"><div class="content-body">
+        <p>
+          We can divide our data into categories for a deeper understanding
+          of behaviour specific to certain authors and communities.
+        </p>
+      </div></section>
+      <section id="unpm-content-licenses-02"><div class="content-body">
+        <p>
+          Let's break things up based on license choice and look at dependency
+          counts over time. You'll notice that WTFPL projects tend to use less
+          dependencies, and that ISC only became popular when it became npm's
+          default license choice.
+        </p>
+      </div></section>
+      <section id="unpm-content-licenses-03"><div class="content-body">
+        <p>
+          If we look at downloads on a logarithmic scale we
+          can see that MIT packages are more popular overall, and GPL-type
+          licenses are slightly less popular amongst users than other choices.
+        </p>
+      </div></section>
+
+      <section id="unpm-content-prefixes-01"><div class="content-body">
+        <p>
+          Communities tend to share a package name prefix to identify themselves,
+          for example <strong>grunt-contrib-watch</strong> and
+          <strong>gulp-autoprefixer</strong> are Grunt and Gulp plugins
+          respectively. Here we have our scatterplots grouped into npm's 48
+          most used prefixes.
+        </p>
+      </div></section>
+
+      <section id="unpm-content-prefixes-02"><div class="content-body">
+        <p>
+          You'll notice that <strong>react</strong> and <strong>ember</strong>
+          packages use a lot of supporting tooling by the amount of development
+          dependencies they use.
+        </p>
+      </div></section>
+
+      <section id="unpm-content-prefixes-03"><div class="content-body">
+        <p>
+          Or you can observe the relative activity of each community by
+          plotting their total number of published versions per package
+          on a logarithmic scale.
+        </p>
+      </div></section>
+
+      <section id="unpm-content-play-intro">
+        <p>
+          We're only scratching the surface here: npm is full of data waiting to
+          be explored. You can start delving deeper by tweaking the inputs below.
+        </p>
+      </section>
+
+      <section id="unpm-content-play">
+        <label for="tweak-category">
+          <p>Grouping:</p>
+          <select data-default="prefixes" name="tweak-category" id="tweak-category">
+            <option value="single">Single View</option>
+            <option value="licenses">Group by License</option>
+            <option value="prefixes">Group by Prefix</option>
+          </select>
+        </label>
+
+        <label for="tweak-x">
+          <p>X Axis:</p>
+          <select data-default="modified" name="tweak-x" id="tweak-x">
+            <option value="descriptions">Description Length</option>
+            <option value="readmes">README Length</option>
+            <option value="scripts">npm Script Count</option>
+            <option value="dependencies">Dependency Count</option>
+            <option value="devDependencies">Development Dependency Count</option>
+            <option value="dependents">Dependent Count</option>
+            <option value="downloads">Weekly Downloads</option>
+            <option value="versions">Published Versions</option>
+            <option value="stars">GitHub Stars</option>
+            <option value="sizes">Package Bundle Size</option>
+            <option value="created">First Published</option>
+            <option value="modified">Last Published</option>
+          </select>
+        </label>
+
+        <label for="tweak-y">
+          <p>Y Axis:</p>
+          <select data-default="versions" name="tweak-y" id="tweak-y">
+            <option value="descriptions">Description Length</option>
+            <option value="readmes">README Length</option>
+            <option value="scripts">npm Script Count</option>
+            <option value="dependencies">Dependency Count</option>
+            <option value="devDependencies">Development Dependency Count</option>
+            <option value="dependents">Dependent Count</option>
+            <option value="downloads">Weekly Downloads</option>
+            <option value="versions">Published Versions</option>
+            <option value="stars">GitHub Stars</option>
+            <option value="sizes">Package Bundle Size</option>
+            <option value="created">First Published</option>
+            <option value="modified">Last Published</option>
+          </select>
+        </label>
+
+        <label for="tweak-log">
+          <p>Logarithmic Scale:</p>
+          <input type="checkbox" name="tweak-log">
+        </label>
+      </section>
+    </div>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-50837128-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script charset="utf-8" src="preload.js"></script>
+    <script>/*<![CDATA[*/(function(w,a,b,d,s){w[a]=w[a]||{};w[a][b]=w[a][b]||{q:[],track:function(r,e,t){this.q.push({r:r,e:e,t:t||+new Date});}};var e=d.createElement(s);var f=d.getElementsByTagName(s)[0];e.async=1;e.src='//nodesource.actonservice.com/cdnr/88/acton/bn/tracker/15680';f.parentNode.insertBefore(e,f);})(window,'ActOn','Beacon',document,'script');ActOn.Beacon.track();/*]]>*/</script>
+  </body>
+</html>
