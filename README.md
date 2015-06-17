@@ -75,7 +75,7 @@ Some other packages that were born from this project include:
 ## Authors and Contributors
 
 <table><tbody>
-<tr><th align="left">Hugh Kennedy</th><td><a href="https://github.com/hughsk">GitHub/hughsk</a></td><td><a href="http://twitter.com/hughsk">Twitter/@hughsk</a></td></tr>
+<tr><th align="left">Hugh Kennedy</th><td><a href="https://github.com/hughsk">GitHub/hughsk</a></td><td><a href="http://twitter.com/hughskennedy">Twitter/@hughskennedy</a></td></tr>
 <tr><th align="left"> Paul DeVay</th><td><a href="https://github.com/pauldevay">GitHub/pauldevay</a></td><td><a href="http://twitter.com/pauldevay">Twitter/@pdevay</a></td></tr>
 </tbody></table>
 
