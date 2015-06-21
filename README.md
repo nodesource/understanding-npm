@@ -69,13 +69,13 @@ Some other packages that were born from this project include:
 * [`rapid-stream`](http://github.com/nodesource/rapid-stream)
 * [`lookat-camera`](http://github.com/stackgl/lookat-camera)
 * [`glsl-scale-log`](http://github.com/stackgl/glsl-scale-log)
-* [`glsl-scale-log`](http://github.com/stackgl/glsl-scale-linear)
+* [`glsl-scale-linear`](http://github.com/stackgl/glsl-scale-linear)
 * [`md5ify`](http://github.com/hughsk/md5ify)
 
 ## Authors and Contributors
 
 <table><tbody>
-<tr><th align="left">Hugh Kennedy</th><td><a href="https://github.com/hughsk">GitHub/hughsk</a></td><td><a href="http://twitter.com/hughsk">Twitter/@hughsk</a></td></tr>
+<tr><th align="left">Hugh Kennedy</th><td><a href="https://github.com/hughsk">GitHub/hughsk</a></td><td><a href="http://twitter.com/hughskennedy">Twitter/@hughskennedy</a></td></tr>
 <tr><th align="left"> Paul DeVay</th><td><a href="https://github.com/pauldevay">GitHub/pauldevay</a></td><td><a href="http://twitter.com/pauldevay">Twitter/@pdevay</a></td></tr>
 </tbody></table>
 
