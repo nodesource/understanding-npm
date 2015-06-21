@@ -21,7 +21,12 @@ void main() {
 
   float m1 = texture2D(metric1, uv).r;
   float m2 = texture2D(metric2, uv).r;
-  float ci = texture2D(category, uv).r;
+
+  // The tiny offset value is workaround for floating point
+  // precision issues on indexes, as seen here:
+  // * https://github.com/nodesource/understanding-npm/issues/1
+  // * https://twitter.com/maxogden/status/611213732551593984
+  float ci = texture2D(category, uv).r + 0.00001;
 
   vec2 idx = vec2(mod(ci, categoryCount.x), floor(ci / categoryCount.y)) - (categoryCount - 1.0) * 0.5;
 
