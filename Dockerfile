@@ -1,4 +1,4 @@
-FROM nodesource/node:0.10
+FROM nodesource/node:0.12
 
 ADD . .
 RUN npm install -g npm
