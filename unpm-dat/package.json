@@ -21,7 +21,7 @@
     "mkdirp": "^0.5.0",
     "normalize-package-data": "^2.0.0",
     "npm-download-counts": "^0.1.1",
-    "npm-stats": "^1.1.0",
+    "npm-stats": "^1.1.1",
     "parallel-transform": "^0.2.2",
     "rapid-stream": "^1.0.0",
     "request": "^2.55.0",
