@@ -1,31 +1,50 @@
 const npm     = require('npm-stats')()
 const json    = require('JSONStream')
 const request = require('request')
-const cheerio = require('cheerio')
 const after   = require('after')
 const path    = require('path')
 const fs      = require('fs')
 
 const stats = module.exports = {}
-const next  = after(4, done)
+const next  = after(6, done)
 
-crawlNpm(next)
+getTotal(next)
+getDownloadsWeek(next)
+getDownloadsDay(next)
 countPublishes(next)
 getQualityCount(next)
 getDownloadStarContrast(next)
 
-function crawlNpm(next) {
-  request.get('https://npmjs.com/', function(err, res, body) {
+
+function getTotal(next) {
+  request('https://skimdb.npmjs.com/registry', { json: true }, function (err, res, body) {
     if (err) return next(err)
 
-    const $ = cheerio.load(body+'')
-    const dls   = $('.icon-cal-7days .pretty-number')[0]
-    const total = $('.icon-package-hex .total-packages')[0]
+    const total = body && body.doc_count || 0
 
-    stats['total']         = Number($(total).text())
-    stats['download-week'] = Number($(dls).text())
-    stats['download-day']  = Math.floor(stats['download-week'] / 7)
+    stats['total'] = Number(total)
+    next()
+  })
+}
 
+function getDownloadsWeek(next) {
+  request('https://api.npmjs.org/downloads/point/last-week', { json: true  }, function (err, res, body) {
+    if (err) return next(err)
+
+    const count = body && body.downloads || 0
+
+    stats['download-week'] = Number(count)
+    next()
+  })
+}
+
+function getDownloadsDay(next) {
+  request('https://api.npmjs.org/downloads/point/last-day', { json: true  }, function (err, res, body) {
+    if (err) return next(err)
+
+    const count = body && body.downloads || 0
+
+    stats['download-day'] = Number(count)
     next()
   })
 }
@@ -104,9 +123,11 @@ function getDownloadStarContrast(next) {
     return pkg.ratio !== Infinity
   })
 
-  stats['ignored-name'] = topIgnored[0].name
-  stats['ignored-stars'] = topIgnored[0].stars
-  stats['ignored-downloads'] = topIgnored[0].count
+  if (topIgnored[0]) {
+    stats['ignored-name'] = topIgnored[0].name
+    stats['ignored-stars'] = topIgnored[0].stars
+    stats['ignored-downloads'] = topIgnored[0].count
+  }
 
   var topInflated = downloads.filter(function(pkg) {
     return pkg.name.indexOf('lodash')            // some of these are single-repo, multi-package
@@ -124,9 +145,11 @@ function getDownloadStarContrast(next) {
     return a.ratio - b.ratio
   })
 
-  stats['inflated-name'] = topInflated[0].name
-  stats['inflated-stars'] = topInflated[0].stars
-  stats['inflated-downloads'] = topInflated[0].count
+  if (topInflated[0]) {
+    stats['inflated-name'] = topInflated[0].name
+    stats['inflated-stars'] = topInflated[0].stars
+    stats['inflated-downloads'] = topInflated[0].count
+  }
 
   next()
 }
