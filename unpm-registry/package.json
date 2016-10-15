@@ -12,20 +12,20 @@
     "start": "budo demo.js | garnish"
   },
   "dependencies": {
-    "gl-geometry": "^1.0.3",
-    "gl-shader": "^4.0.1",
-    "gl-mat4": "^1.1.2",
-    "glsl-diffuse-oren-nayar": "^1.0.2",
+    "gl-geometry": "1.0.3",
+    "gl-shader": "4.0.1",
+    "gl-mat4": "1.1.2",
+    "glsl-diffuse-oren-nayar": "1.0.2",
     "glsl-fog": "0.0.1",
-    "icosphere": "^1.0.0"
+    "icosphere": "1.0.0"
   },
   "devDependencies": {
-    "budo": "^2.1.2",
-    "canvas-fit": "^1.3.0",
-    "canvas-orbit-camera": "^1.0.1",
+    "budo": "2.1.2",
+    "canvas-fit": "1.3.0",
+    "canvas-orbit-camera": "1.0.1",
     "eye-vector": "0.0.0",
-    "garnish": "^2.0.1",
-    "gl-context": "^0.1.1",
-    "watchify": "^3.1.0"
+    "garnish": "2.0.1",
+    "gl-context": "0.1.1",
+    "watchify": "3.1.0"
   }
 }

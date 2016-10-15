@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "eye-vector": "0.0.0",
-    "gl-mat4": "^1.1.2",
-    "lookat-camera": "^1.0.0"
+    "gl-mat4": "1.1.2",
+    "lookat-camera": "1.0.0"
   }
 }
