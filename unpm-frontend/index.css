@@ -4,7 +4,11 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: 'Source Sans Pro';
+  font-size: 16px;
+  font-weight: 400;
   background: #21122F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -40,7 +44,6 @@ body.no-webgl {
   transform: translate(0.1rem, 0) translate(-50%, -50%);
   transform-origin: 50% 50%;
   font-size: 1.5rem;
-  font-weight: 400;
   transition: color 0.25s, opacity 0.25s;
 }
 
@@ -65,7 +68,7 @@ body.no-webgl {
 .content section {
   visibility: hidden;
   opacity: 0;
-  text-align: justify;
+  text-align: left;
   text-shadow: 0 1px 2px rgba(34,18,31,.45);
   padding: 2rem;
 
@@ -106,16 +109,13 @@ body.no-webgl {
 
 .content .content-stat strong {
   font-size: 2rem;
-  font-weight: 100;
 }
 
 #unpm-content-intro h1 {
-  border-bottom: 1px solid #783A6A;
-  padding-bottom: 1rem;
-  text-align: center;
-  font-weight: 100;
+  text-align: left;
+  font-weight: 200;
   text-transform: none;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
 }
 
 body .nsight-header > h1 {
@@ -129,15 +129,12 @@ body.unpm-intro .nsight-header > h1 {
 
 .content section h1 {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
 .content section p {
-  font-size: 0.875rem;
-  font-weight: 300;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
@@ -151,8 +148,7 @@ body.unpm-intro .nsight-header > h1 {
 }
 
 #unpm-content-intro p:nth-of-type(1) {
-  font-size: 1rem;
-  font-style: italic;
+  font-size: 1.25rem;
 }
 
 body.unpm-intro #unpm-content-intro,
@@ -193,9 +189,10 @@ body.unpm-plots-09 #unpm-content-plots-09 {
 
 body .content #unpm-content-intro {
   left: 25%;
-  max-width: 325px;
+  max-width: 33vw;
   bottom: auto;
   top: 50%;
+  transform-origin: top left;
   transform: translate(-50%, -50%);
 }
 
@@ -214,13 +211,8 @@ body.tweaked .content #unpm-content-play-intro {
   opacity: 0;
 }
 
-body .content #unpm-content-play-intro p {
-  font-size: 0.75rem;
-}
-
 .progress-percent {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 100;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, 128px);
@@ -270,7 +262,6 @@ body .content #unpm-content-play-intro p {
   right: 2.75rem;
   white-space: pre;
   text-transform: uppercase;
-  font-weight: 800;
   font-size: 0.7rem;
   transform: translate(0,-50%);
   transition: right 0.25s;
@@ -295,12 +286,10 @@ body.unpm-play .unpm-navigation-next:before {
 
 .unpm-fail h1 {
   font-size: 2rem;
-  font-weight: 100;
   line-height: 1.3em;
 }
 
 .unpm-fail p {
-  font-weight: 100;
   line-height: 1.5rem;
   font-size: 1rem;
   margin-top: 2rem;
