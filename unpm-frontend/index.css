@@ -85,26 +85,35 @@ body.no-webgl {
   bottom: 0;
 }
 
-#unpm-content-plots-04 .content-body {
-  max-width: 500px;
-}
-
-#unpm-content-plots-04 p {
-  font-size: 0.8rem;
-}
-
 .content .content-body {
-  width: 80vw;
+  width: 75vw;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 800px;
+  font-size: 1.25rem;
 }
 
 .content .content-stat {
   position: absolute;
   top: 2rem;
-  left: calc(50% - 250px - 2rem);
+  left: calc(50% - 400px - 2rem);
   text-align: right;
   transform: translate(-100%, 0);
+}
+
+@media screen and (max-width: 1000px) {
+  .content .content-stat {
+    left: 0;
+    margin: 1rem auto;
+    position: relative;
+    text-align: left;
+    top: 0;
+    transform: none;
+    width: 75vw;
+  }
+}
+
+.content .content-stat h1 {
+  font-size: 1rem;
 }
 
 .content .content-stat strong {
@@ -113,9 +122,19 @@ body.no-webgl {
 
 #unpm-content-intro h1 {
   text-align: left;
-  font-weight: 200;
+  font-weight: 300;
+  letter-spacing: 0px;
   text-transform: none;
   font-size: 2.25rem;
+}
+
+#unpm-content-intro p {
+  font-size: 1.25rem;
+}
+
+#unpm-content-intro p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 body .nsight-header > h1 {
@@ -128,10 +147,12 @@ body.unpm-intro .nsight-header > h1 {
 }
 
 .content section h1 {
+  font-weight: 600;
+  letter-spacing: .12em;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .5em;
 }
 
 .content section p {
@@ -145,10 +166,6 @@ body.unpm-intro .nsight-header > h1 {
 
 .content section p:last-of-type {
   margin-bottom: 0;
-}
-
-#unpm-content-intro p:nth-of-type(1) {
-  font-size: 1.25rem;
 }
 
 body.unpm-intro #unpm-content-intro,
@@ -188,27 +205,12 @@ body.unpm-plots-09 #unpm-content-plots-09 {
 }
 
 body .content #unpm-content-intro {
-  left: 25%;
-  max-width: 33vw;
+  left: 33%;
+  max-width: 45vw;
   bottom: auto;
   top: 50%;
   transform-origin: top left;
-  transform: translate(-50%, -50%);
-}
-
-body .content #unpm-content-play-intro {
-  position: absolute;
-  bottom: 4rem;
-  left: 1rem;
-  right: auto;
-  max-width: 18rem;
-  padding: 1.5rem;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
-body.tweaked .content #unpm-content-play-intro {
-  opacity: 0;
+  transform: translate(-55%, -50%);
 }
 
 .progress-percent {
@@ -262,7 +264,9 @@ body.tweaked .content #unpm-content-play-intro {
   right: 2.75rem;
   white-space: pre;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  letter-spacing: .12em;
+  font-weight: 600;
+  font-size: 1.25rem;
   transform: translate(0,-50%);
   transition: right 0.25s;
 }
@@ -301,22 +305,45 @@ body.unpm-play .unpm-navigation-next:before {
   }
 }
 
+/*body .content #unpm-content-play-intro {
+  position: absolute;
+  bottom: 4rem;
+  left: 1rem;
+  right: auto;
+  max-width: 18rem;
+  padding: 1.5rem;
+  opacity: 1;
+  transition: opacity 0.5s;
+}*/
+
 #unpm-content-play {
-  padding: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#unpm-content-play .content-body {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .content section label {
   float: left;
+  font-size: 1rem;
   margin-left: 1.5rem;
 }
 
 .content section label p {
-  float: left;
-  margin-right: 0.5rem;
-}
-
-.content section label:last-child {
-  float: right;
+  font-size: .85rem;
+  line-height: 1.5rem;
+  margin-right: .5rem;
+  color: #89a19d;
+  text-transform: uppercase;
+  letter-spacing: .12em;
 }
 
 .content section label:first-child {
@@ -324,8 +351,26 @@ body.unpm-play .unpm-navigation-next:before {
 }
 
 .content section label select {
-  background: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: 0 0;
   border: 0;
-  outline: 0;
+  border-bottom: 1px solid #ed77d9;
+  border-radius: 0;
   color: #fff;
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+  outline: 0;
+  padding: 0 24px 10px 0;
+}
+
+.content section label:not([for="tweak-log"]):after {
+  content: '\232A';
+  color: #fff;
+  display: inline-block;
+  font-size: .85em;
+  line-height: 120%;
+  margin-left: 0;
+  transform: translate(-150%, 0) rotate(90deg);
 }
