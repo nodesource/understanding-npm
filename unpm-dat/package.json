@@ -2,7 +2,7 @@
   "name": "@unpm/dat",
   "version": "1.0.0",
   "scripts": {
-    "start": "dat listen",
+    "start": "dat sync",
     "rebuild": "node .",
     "harvest": "node downloads && node stars && npm run rebuild && node stats"
   },
@@ -15,8 +15,8 @@
     "head-stream": "0.0.4",
     "hosted-git-info": "^2.1.2",
     "index-list": "^1.0.0",
-    "level": "^0.18.0",
-    "level-sublevel": "^6.4.6",
+    "level": "^1.7.0",
+    "level-sublevel": "^6.6.1",
     "mkdirp": "^0.5.0",
     "normalize-package-data": "^2.0.0",
     "npm-download-counts": "^0.1.1",
@@ -30,6 +30,6 @@
     "through2": "^0.6.5"
   },
   "devDependencies": {
-    "dat": "^6.9.7"
+    "dat": "^13.8.1"
   }
 }
